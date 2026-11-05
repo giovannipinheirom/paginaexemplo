@@ -1,0 +1,1364 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ===== SEO básico ===== -->
+<title>E-POC | App de Medicina de Emergência com PCR guiada por voz</title>
+<meta name="description" content="App de medicina de emergência para médicos e estudantes: PCR guiada por voz, +90 calculadoras, escores e protocolos (Sepse, AVC, IAM), gasometria por foto e relatório pronto para o prontuário. Teste 7 dias grátis.">
+<link rel="canonical" href="https://emergenciapointofcare.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#06121f">
+<meta name="author" content="E-POC Emergência Point of Care">
+
+<!-- Open Graph / redes sociais -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="E-POC Emergência Point of Care">
+<meta property="og:title" content="E-POC | Toda a medicina de emergência em um só app">
+<meta property="og:description" content="PCR guiada por voz, calculadoras, escores, protocolos e relatório pronto para o prontuário em segundos. Teste 7 dias grátis.">
+<meta property="og:url" content="https://emergenciapointofcare.com/">
+<meta property="og:image" content="https://emergenciapointofcare.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="E-POC | App de Medicina de Emergência">
+<meta name="twitter:description" content="PCR guiada por voz, +90 ferramentas e relatório pronto para o prontuário. Teste 7 dias grátis.">
+<meta name="twitter:image" content="https://emergenciapointofcare.com/img/og-image.jpg">
+
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+<!-- ===== Dados estruturados (Google) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://emergenciapointofcare.com/#org",
+      "name": "E-POC Emergência Point of Care",
+      "url": "https://emergenciapointofcare.com/",
+      "logo": "https://emergenciapointofcare.com/img/logo-192.webp",
+      "email": "contato@emergenciapointofcare.com",
+      "sameAs": [
+        "https://instagram.com/epocemergencia",
+        "https://facebook.com/epocemergencia",
+        "https://tiktok.com/@epocemergencia"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://emergenciapointofcare.com/#site",
+      "url": "https://emergenciapointofcare.com/",
+      "name": "E-POC Emergência",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://emergenciapointofcare.com/#org" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "E-POC — Emergência Point of Care",
+      "applicationCategory": "MedicalApplication",
+      "operatingSystem": "iOS, Android, Web",
+      "url": "https://emergenciapointofcare.com/",
+      "description": "Aplicativo de medicina de emergência com PCR interativa guiada por voz, calculadoras, escores clínicos, protocolos, gasometria por foto e relatório técnico pronto para o prontuário.",
+      "audience": { "@type": "MedicalAudience", "audienceType": "Médicos e estudantes de medicina" },
+      "publisher": { "@id": "https://emergenciapointofcare.com/#org" },
+      "offers": [
+        { "@type": "Offer", "name": "Acesso 30 dias", "price": "39.90", "priceCurrency": "BRL", "url": "https://epoc-e.com/" },
+        { "@type": "Offer", "name": "Plano anual", "price": "319.00", "priceCurrency": "BRL", "url": "https://epoc-e.com/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Como funciona o teste grátis de 7 dias?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Você cria sua conta e usa o E-POC completo por 7 dias, no celular e no computador. Depois do período de teste, escolhe o plano que cabe no seu ritmo de plantão: mensal ou anual." } },
+        { "@type": "Question", "name": "Quem pode usar o E-POC?",
+          "acceptedAnswer": { "@type": "Answer", "text": "O uso é restrito a médicos e estudantes de medicina. Para a enfermagem de urgência existe a plataforma Top Nurse, do mesmo ecossistema." } },
+        { "@type": "Question", "name": "O E-POC funciona no iPhone, no Android e no computador?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. O app é compatível com iOS e Android e tem versão web para desktop. Celular e computador ficam sincronizados em tempo real." } },
+        { "@type": "Question", "name": "Como o relatório chega ao prontuário?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ao final do atendimento o E-POC gera um relatório técnico, com linguagem médica revisada, e envia automaticamente para a versão desktop. Basta copiar e colar no prontuário." } },
+        { "@type": "Question", "name": "O conteúdo do app é atualizado?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim. As diretrizes são atualizadas automaticamente e o app avisa quando há conteúdo novo, como novos consensos e guidelines." } },
+        { "@type": "Question", "name": "O E-POC substitui o julgamento clínico?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. O E-POC é uma ferramenta de apoio à decisão baseada em diretrizes vigentes. A conduta final é sempre do médico responsável pelo paciente." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* ===================== TOKENS ===================== */
+:root{
+  --ink:#06121f; --ink-2:#0a1a2c; --ink-3:#0f2338; --card:#0d2033;
+  --line:rgba(160,200,235,.12); --line-2:rgba(160,200,235,.22);
+  --text:#e9f2f9; --muted:#93a8bc; --dim:#647c93;
+  --cyan:#2ad4f0; --cyan-2:#11a9cc; --cyan-soft:rgba(42,212,240,.12);
+  --red:#ff3d55; --red-soft:rgba(255,61,85,.14);
+  --green:#3be39b; --amber:#ffc24b;
+  --paper:#f3f7fb; --paper-2:#e7eef5; --paper-ink:#0b1b2c; --paper-muted:#4d6378; --paper-line:#d6e1ea;
+  --radius:18px; --radius-lg:28px;
+  --shadow:0 20px 60px -20px rgba(0,0,0,.55);
+  --max:1180px;
+  --font:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--text);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{line-height:1.1;letter-spacing:-.025em;margin:0;font-weight:800}
+p{margin:0}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--cyan);color:var(--ink);padding:10px 16px;border-radius:10px;font-weight:700;z-index:100}
+.skip:focus{left:12px}
+
+/* ===================== BOTÕES ===================== */
+.btn{--h:52px;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:var(--h);padding:0 26px;border-radius:999px;font-weight:800;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px;transition:transform .2s}
+.btn:hover svg{transform:translateX(3px)}
+.btn-primary{background:linear-gradient(135deg,#ff4a60,#e81f3d);color:#fff;box-shadow:0 10px 30px -8px rgba(255,61,85,.65),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 40px -10px rgba(255,61,85,.8),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn-ghost{background:rgba(255,255,255,.05);color:var(--text);border:1px solid var(--line-2)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-lg{--h:60px;font-size:17px;padding:0 32px}
+.btn-sm{--h:42px;font-size:14.5px;padding:0 18px}
+.btn-block{width:100%}
+
+/* ===================== HEADER ===================== */
+.header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,border-color .3s,backdrop-filter .3s;border-bottom:1px solid transparent}
+.header.scrolled{background:rgba(6,18,31,.82);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-color:var(--line)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand-mark{width:38px;height:38px;border-radius:11px;background:radial-gradient(circle at 30% 20%,#123a55,#071827);border:1px solid rgba(42,212,240,.35);display:grid;place-items:center;box-shadow:0 0 22px -4px rgba(42,212,240,.5)}
+.brand-mark svg{width:26px;height:26px}
+.brand-name{font-weight:800;font-size:19px;letter-spacing:-.02em;line-height:1}
+.brand-name small{display:block;white-space:nowrap;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.nav{display:flex;gap:28px}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px;transition:color .2s}
+.nav a:hover{color:var(--text)}
+.header-cta{display:flex;align-items:center;gap:10px}
+.link-login{color:var(--muted);text-decoration:none;font-weight:700;font-size:15px;padding:8px 10px}
+.link-login:hover{color:var(--text)}
+.menu-btn{display:none;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--text);cursor:pointer}
+.menu-btn svg{width:22px;height:22px;margin:auto}
+.mobile-nav{display:none}
+
+/* ===================== HERO ===================== */
+.hero{position:relative;padding:132px 0 64px;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;
+  background:
+   radial-gradient(800px 500px at 78% 30%,rgba(42,212,240,.16),transparent 60%),
+   radial-gradient(600px 400px at 10% 90%,rgba(255,61,85,.10),transparent 60%),
+   linear-gradient(180deg,#071728 0%,var(--ink) 100%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 30%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 30%,transparent 80%)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 10px;border-radius:999px;background:var(--cyan-soft);border:1px solid rgba(42,212,240,.3);color:#bdf3fd;font-size:13.5px;font-weight:700;letter-spacing:.01em}
+.pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(59,227,155,.7);animation:pulse 1.6s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(59,227,155,0)}100%{box-shadow:0 0 0 0 rgba(59,227,155,0)}}
+.hero h1{font-size:clamp(38px,5.6vw,66px);margin:22px 0 22px}
+.hero h1 .kw{display:block;font-size:clamp(14px,1.4vw,16px);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--red);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:currentColor;opacity:.25;border-radius:4px}
+.hero-sub{font-size:clamp(17px,1.6vw,19.5px);color:var(--muted);max-width:560px}
+.hero-sub strong{color:var(--text);font-weight:700}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 22px}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px;list-style:none;padding:0;margin:0;color:var(--muted);font-size:14.5px;font-weight:600}
+.checks li{display:flex;align-items:center;gap:8px}
+.checks svg{width:16px;height:16px;color:var(--green);flex:none}
+.proof{display:flex;align-items:center;gap:14px;margin-top:34px;padding-top:26px;border-top:1px solid var(--line);max-width:560px}
+.avatars{display:flex}
+.avatars span{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:12.5px;font-weight:800;border:2px solid var(--ink);margin-left:-10px;color:#fff}
+.avatars span:first-child{margin-left:0}
+.proof p{font-size:14.5px;color:var(--muted);line-height:1.45}
+.proof strong{color:var(--text);font-size:16px}
+
+/* Phone mockup */
+.device-stage{position:relative;display:flex;justify-content:center}
+.phone{position:relative;width:310px;max-width:100%;aspect-ratio:9/19;border-radius:46px;padding:12px;background:linear-gradient(145deg,#2a3b4d,#0b1622 50%,#22303e);box-shadow:0 50px 100px -30px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.08),0 0 80px -20px rgba(42,212,240,.35)}
+.screen{position:relative;height:100%;border-radius:36px;overflow:hidden;background:linear-gradient(180deg,#0a1626,#081220);display:flex;flex-direction:column;padding:44px 16px 16px;font-size:13px}
+.notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:96px;height:26px;border-radius:20px;background:#000;z-index:2}
+.scr-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.scr-tag{display:inline-flex;align-items:center;gap:6px;background:var(--red-soft);color:#ff8a99;border:1px solid rgba(255,61,85,.35);padding:4px 10px;border-radius:999px;font-weight:800;font-size:11px;letter-spacing:.06em}
+.scr-tag i{width:6px;height:6px;border-radius:50%;background:var(--red);animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.2}}
+.scr-mode{color:var(--muted);font-size:11.5px;font-weight:700}
+.timer-card{background:linear-gradient(180deg,rgba(255,61,85,.16),rgba(255,61,85,.04));border:1px solid rgba(255,61,85,.3);border-radius:18px;padding:14px;text-align:center}
+.timer-lbl{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#ffb3bd;font-weight:800}
+.timer{font-family:var(--mono);font-size:44px;font-weight:700;letter-spacing:-.02em;color:#fff;line-height:1.1;margin:2px 0}
+.rhythm{font-size:12px;color:#ffd2d8;font-weight:700}
+.ecg-mini{height:38px;margin:10px -14px 0}
+.ecg-mini path{stroke:var(--green);stroke-width:2;fill:none;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.4s linear infinite}
+@keyframes draw{to{stroke-dashoffset:0}}
+.next{display:flex;align-items:center;justify-content:space-between;margin:12px 0;padding:11px 12px;border-radius:14px;background:rgba(42,212,240,.1);border:1px solid rgba(42,212,240,.3)}
+.next b{display:block;font-size:12.5px}
+.next small{color:var(--muted);font-size:11px}
+.next .cd{font-family:var(--mono);font-weight:700;color:var(--cyan);font-size:18px}
+.steps-list{list-style:none;padding:0;margin:0;display:grid;gap:7px}
+.steps-list li{display:flex;align-items:center;gap:10px;padding:9px 11px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid var(--line);font-weight:700;font-size:12.3px}
+.steps-list li small{margin-left:auto;font-family:var(--mono);color:var(--dim);font-size:11px;font-weight:500}
+.steps-list .ok{width:18px;height:18px;border-radius:50%;background:var(--green);display:grid;place-items:center;flex:none}
+.steps-list .ok svg{width:11px;height:11px;color:#04261a}
+.steps-list .now{border-color:rgba(255,194,75,.5);background:rgba(255,194,75,.1)}
+.steps-list .now .ok{background:transparent;border:2px solid var(--amber)}
+.voice{margin-top:auto;display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:999px;background:#fff;color:#0b1b2c;font-weight:700;font-size:12px}
+.mic{width:28px;height:28px;border-radius:50%;background:var(--red);display:grid;place-items:center;flex:none}
+.mic svg{width:14px;height:14px;color:#fff}
+.wave{display:flex;gap:2px;align-items:center;margin-left:auto}
+.wave i{width:3px;border-radius:2px;background:var(--red);animation:wave 1s ease-in-out infinite}
+.wave i:nth-child(1){height:8px}.wave i:nth-child(2){height:14px;animation-delay:.1s}.wave i:nth-child(3){height:10px;animation-delay:.2s}.wave i:nth-child(4){height:16px;animation-delay:.3s}.wave i:nth-child(5){height:7px;animation-delay:.4s}
+@keyframes wave{50%{transform:scaleY(.4)}}
+.chip{position:absolute;display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:16px;background:rgba(13,32,51,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line-2);box-shadow:var(--shadow);font-size:13px;font-weight:700;white-space:nowrap;animation:float 6s ease-in-out infinite}
+.chip small{display:block;color:var(--muted);font-weight:600;font-size:11.5px}
+.chip .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none}
+.chip .ic svg{width:18px;height:18px}
+.chip-1{top:9%;right:calc(50% + 122px)}
+.chip-2{top:50%;left:calc(50% + 122px);animation-delay:-2s}
+.chip-3{bottom:7%;right:calc(50% + 122px);animation-delay:-4s}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* ECG faixa */
+.ecg-band{position:absolute;left:0;right:0;bottom:0;width:100%;height:110px;z-index:-1;opacity:.55;pointer-events:none}
+.ecg-band path{fill:none;stroke:url(#ecgGrad);stroke-width:2;stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 6s linear infinite}
+
+/* ===================== TICKER ===================== */
+.ticker{border-block:1px solid var(--line);background:var(--ink-2);overflow:hidden;padding:16px 0}
+.ticker-track{display:flex;gap:12px;width:max-content;animation:scroll 60s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker span{flex:none;padding:7px 14px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:14px;font-weight:600;white-space:nowrap}
+.ticker span::before{content:"+ ";color:var(--red);font-weight:800}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ===================== SEÇÕES ===================== */
+section{position:relative}
+.sec{padding:110px 0}
+.sec-head{max-width:720px;margin:0 auto 60px;text-align:center}
+.sec-head.left{margin-left:0;text-align:left}
+.kicker{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin-bottom:16px}
+.sec h2{font-size:clamp(30px,4.2vw,48px)}
+.sec-head p{margin-top:18px;color:var(--muted);font-size:clamp(16.5px,1.5vw,18.5px)}
+.paper{background:var(--paper);color:var(--paper-ink)}
+.paper .kicker{color:#0a8db0}
+.paper .sec-head p{color:var(--paper-muted)}
+
+/* Comparação */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:1000px;margin:0 auto}
+.cmp{border-radius:var(--radius-lg);padding:34px;border:1px solid var(--line)}
+.cmp h3{font-size:20px;display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.cmp h3 .tag{font-size:12px;padding:5px 10px;border-radius:999px;letter-spacing:.06em;text-transform:uppercase}
+.cmp ul{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.cmp li{display:flex;gap:14px;align-items:flex-start;font-size:16px;line-height:1.5}
+.cmp li .i{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;flex:none;margin-top:1px}
+.cmp li .i svg{width:13px;height:13px}
+.cmp-bad{background:rgba(255,255,255,.02);color:var(--muted)}
+.cmp-bad .tag{background:var(--red-soft);color:#ff8a99}
+.cmp-bad .i{background:var(--red-soft);color:var(--red)}
+.cmp-good{background:linear-gradient(160deg,rgba(42,212,240,.12),rgba(42,212,240,.02));border-color:rgba(42,212,240,.35);box-shadow:0 30px 80px -40px rgba(42,212,240,.5)}
+.cmp-good .tag{background:rgba(59,227,155,.15);color:var(--green)}
+.cmp-good .i{background:rgba(59,227,155,.18);color:var(--green)}
+.cmp-good li{color:var(--text)}
+.cmp-good b{color:#fff}
+
+/* Features alternadas */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:40px 0}
+.feature+.feature{border-top:1px solid var(--line)}
+.feature.rev .f-media{order:2}
+.f-media{position:relative;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--line-2);background:var(--card);box-shadow:var(--shadow)}
+.f-media img{width:100%;height:auto}
+.f-media.tall{max-width:420px;justify-self:center}
+.f-num{font-family:var(--mono);font-size:13px;color:var(--red);font-weight:700;letter-spacing:.1em}
+.feature h3{font-size:clamp(26px,3vw,36px);margin:12px 0 16px}
+.feature p.lead{color:var(--muted);font-size:17.5px}
+.bul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.bul li{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:16px}
+.bul svg{width:20px;height:20px;color:var(--cyan);flex:none;margin-top:2px}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.pill-row span{font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;background:var(--cyan-soft);color:#bdf3fd;border:1px solid rgba(42,212,240,.25)}
+
+/* Mini PCR visual (feature 1) */
+.pcr-visual{padding:34px;background:radial-gradient(500px 300px at 50% 0%,rgba(255,61,85,.18),transparent 70%),var(--card)}
+.pcr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.pcr-cell{padding:16px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+.pcr-cell small{display:block;color:var(--muted);font-weight:700;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase}
+.pcr-cell b{display:block;font-family:var(--mono);font-size:26px;margin-top:4px}
+.pcr-cell.red b{color:var(--red)} .pcr-cell.cy b{color:var(--cyan)} .pcr-cell.gr b{color:var(--green)} .pcr-cell.am b{color:var(--amber)}
+.pcr-modes{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pcr-modes span{padding:8px 12px;border-radius:12px;border:1px solid var(--line-2);font-size:13px;font-weight:700}
+.pcr-modes span.on{background:var(--red);border-color:var(--red);color:#fff}
+.voice-big{margin-top:16px;display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:16px;background:#fff;color:#0b1b2c;font-weight:700;font-size:14.5px}
+
+/* Grid de recursos menores */
+.mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+.mini{padding:26px;border-radius:var(--radius);background:var(--ink-2);border:1px solid var(--line);transition:border-color .25s,transform .25s}
+.mini:hover{border-color:rgba(42,212,240,.4);transform:translateY(-4px)}
+.mini .ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--cyan-soft);color:var(--cyan);margin-bottom:18px}
+.mini .ico svg{width:22px;height:22px}
+.mini h3{font-size:18px;margin-bottom:8px;letter-spacing:-.01em}
+.mini p{color:var(--muted);font-size:15px;line-height:1.55}
+.calc-demo{margin-top:14px;padding:12px;border-radius:12px;background:rgba(0,0,0,.25);font-family:var(--mono);font-size:12px;color:var(--muted);line-height:1.7}
+.calc-demo b{color:var(--green)}
+
+.center-cta{text-align:center;margin-top:56px}
+.center-cta p{color:var(--muted);font-size:14.5px;margin-top:14px}
+
+/* Demo vídeo */
+.demo{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%)}
+.demo-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
+.video-frame{position:relative;width:300px;max-width:100%;margin:0 auto;aspect-ratio:9/16;border-radius:34px;overflow:hidden;border:10px solid #1a2836;box-shadow:0 40px 90px -30px rgba(0,0,0,.8),0 0 70px -20px rgba(42,212,240,.4);background:#000}
+.video-frame video,.video-frame img{width:100%;height:100%;object-fit:cover}
+.play{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,transparent 40%,rgba(6,18,31,.75));border:0;cursor:pointer;color:#fff}
+.play span{width:76px;height:76px;border-radius:50%;background:var(--red);display:grid;place-items:center;box-shadow:0 0 0 12px rgba(255,61,85,.25);transition:transform .2s}
+.play:hover span{transform:scale(1.08)}
+.play svg{width:28px;height:28px;margin-left:4px}
+.play em{position:absolute;bottom:22px;font-style:normal;font-weight:800;font-size:14px}
+
+/* Passos */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.step{position:relative;padding:34px 30px;border-radius:var(--radius-lg);background:#fff;border:1px solid var(--paper-line);box-shadow:0 18px 50px -30px rgba(11,27,44,.35)}
+.step .n{font-family:var(--mono);font-weight:700;font-size:14px;color:#fff;background:var(--paper-ink);width:40px;height:40px;border-radius:12px;display:grid;place-items:center;margin-bottom:22px}
+.step h3{font-size:22px;margin-bottom:10px}
+.step p{color:var(--paper-muted);font-size:16px}
+.step .t{display:inline-block;margin-top:18px;font-size:13px;font-weight:800;color:#0a8db0;background:#e2f6fb;padding:6px 12px;border-radius:999px}
+.step:not(:last-child)::after{content:"";position:absolute;top:54px;right:-22px;width:22px;height:2px;background:var(--paper-line)}
+
+/* Biblioteca de ferramentas */
+.lib{background:#fff;border:1px solid var(--paper-line);border-radius:var(--radius-lg);padding:28px;box-shadow:0 30px 80px -50px rgba(11,27,44,.45)}
+.lib-tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:22px}
+.search{position:relative;flex:1 1 280px;max-width:380px}
+.search input{width:100%;height:50px;border-radius:14px;border:1px solid var(--paper-line);background:var(--paper);padding:0 16px 0 46px;font:inherit;font-size:16px;color:var(--paper-ink)}
+.search input:focus{outline:2px solid #0a8db0;outline-offset:1px;background:#fff}
+.search svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);width:19px;height:19px;color:var(--paper-muted)}
+.cats{display:flex;flex-wrap:wrap;gap:8px}
+.cats button{font:inherit;font-size:14px;font-weight:700;padding:9px 14px;border-radius:999px;border:1px solid var(--paper-line);background:#fff;color:var(--paper-muted);cursor:pointer;transition:all .2s}
+.cats button:hover{border-color:#0a8db0;color:var(--paper-ink)}
+.cats button[aria-pressed="true"]{background:var(--paper-ink);border-color:var(--paper-ink);color:#fff}
+.tools{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.tools li{display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:12px;background:var(--paper);font-weight:700;font-size:14.5px;color:var(--paper-ink)}
+.tools li::before{content:"";width:8px;height:8px;border-radius:3px;flex:none;background:var(--c,#0a8db0)}
+.tools li[data-cat="pcr"]{--c:#e81f3d}.tools li[data-cat="prot"]{--c:#0a8db0}.tools li[data-cat="esc"]{--c:#7c4dff}.tools li[data-cat="drog"]{--c:#f08c00}.tools li[data-cat="tox"]{--c:#2f9e44}.tools li[data-cat="uti"]{--c:#1c7ed6}.tools li[data-cat="dx"]{--c:#d6336c}
+.tools li[hidden]{display:none}
+.lib-foot{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;margin-top:22px;padding-top:22px;border-top:1px solid var(--paper-line);color:var(--paper-muted);font-size:15px;font-weight:600}
+.lib-foot strong{color:var(--paper-ink)}
+.more-wrap{position:relative;text-align:center;margin-top:-60px;padding-top:70px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff 60%)}
+.more-wrap[hidden]{display:none}
+.more-btn{font:inherit;font-weight:800;font-size:15px;padding:12px 22px;border-radius:999px;border:1px solid var(--paper-ink);background:#fff;color:var(--paper-ink);cursor:pointer;transition:all .2s}
+.more-btn:hover{background:var(--paper-ink);color:#fff}
+.empty{display:none;text-align:center;padding:30px;color:var(--paper-muted)}
+
+/* Público */
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.aud-card{display:flex;gap:16px;align-items:flex-start;padding:24px;border-radius:var(--radius);border:1px solid var(--line);background:var(--ink-2)}
+.aud-card .ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--red-soft);color:var(--red);flex:none}
+.aud-card .ico svg{width:22px;height:22px}
+.aud-card h3{font-size:17.5px;margin-bottom:4px;letter-spacing:-.01em}
+.aud-card p{color:var(--muted);font-size:14.5px;line-height:1.5}
+.notice{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 18px;padding:18px 22px;border-radius:16px;border:1px dashed var(--line-2);color:var(--muted);font-size:15px;text-align:center}
+.notice a{color:var(--cyan);font-weight:800;text-decoration:none}
+.notice a:hover{text-decoration:underline}
+
+/* Números */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;background:var(--ink-2)}
+.stat{padding:36px 28px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:var(--mono);font-size:clamp(34px,4vw,46px);letter-spacing:-.03em;line-height:1;color:#fff}
+.stat b span{color:var(--cyan)}
+.stat p{margin-top:12px;color:var(--muted);font-size:15px;font-weight:600}
+
+/* Depoimentos */
+.testis{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+.testi{display:flex;flex-direction:column;padding:30px;border-radius:var(--radius-lg);background:linear-gradient(180deg,var(--ink-3),var(--ink-2));border:1px solid var(--line)}
+.stars{display:flex;gap:3px;color:var(--amber);margin-bottom:18px}
+.stars svg{width:17px;height:17px}
+.testi blockquote{margin:0 0 26px;font-size:16.5px;line-height:1.65;color:#d8e6f1}
+.who{margin-top:auto;display:flex;align-items:center;gap:12px}
+.who .av{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;flex:none}
+.who b{display:block;font-size:15.5px}
+.who small{color:var(--muted);font-size:13.5px}
+.trust{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 30px;margin-top:44px;color:var(--muted);font-size:14.5px;font-weight:700}
+.trust span{display:flex;align-items:center;gap:8px}
+.trust svg{width:18px;height:18px;color:var(--green)}
+
+/* Planos */
+.pricing{display:grid;grid-template-columns:1fr 1.15fr;gap:22px;max-width:920px;margin:0 auto;align-items:stretch}
+.plan{position:relative;display:flex;flex-direction:column;padding:36px;border-radius:var(--radius-lg);background:#fff;border:1px solid var(--paper-line)}
+.plan h3{font-size:20px}
+.plan .desc{color:var(--paper-muted);font-size:15px;margin-top:6px}
+.price{display:flex;align-items:baseline;gap:6px;margin:24px 0 4px;font-weight:800;letter-spacing:-.03em}
+.price .cur{font-size:20px}
+.price .val{font-size:52px;line-height:1}
+.price .per{font-size:16px;color:var(--paper-muted);font-weight:700;letter-spacing:0}
+.price-note{font-size:14.5px;color:var(--paper-muted);font-weight:600;min-height:22px}
+.plan ul{list-style:none;padding:0;margin:26px 0 30px;display:grid;gap:12px}
+.plan li{display:flex;gap:11px;align-items:flex-start;font-size:15.5px;font-weight:600}
+.plan li svg{width:19px;height:19px;color:#0a8db0;flex:none;margin-top:2px}
+.plan .btn{margin-top:auto}
+.plan-hi{background:linear-gradient(170deg,#0b1d31,#06121f);color:var(--text);border:2px solid var(--cyan);box-shadow:0 40px 90px -40px rgba(17,169,204,.7)}
+.plan-hi .desc,.plan-hi .per,.plan-hi .price-note{color:var(--muted)}
+.plan-hi li svg{color:var(--green)}
+.badge{position:absolute;top:-15px;left:36px;padding:7px 14px;border-radius:999px;background:var(--cyan);color:var(--ink);font-size:12.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.save{display:inline-block;margin-left:8px;padding:4px 10px;border-radius:999px;background:rgba(59,227,155,.16);color:var(--green);font-size:13px;font-weight:800;vertical-align:middle}
+.strike{text-decoration:line-through;opacity:.7}
+.risk{display:flex;align-items:center;gap:18px;max-width:920px;margin:26px auto 0;padding:22px 26px;border-radius:var(--radius);background:#fff;border:1px solid var(--paper-line)}
+.risk .ico{width:54px;height:54px;border-radius:16px;background:#e2f6fb;color:#0a8db0;display:grid;place-items:center;flex:none}
+.risk .ico svg{width:26px;height:26px}
+.risk b{display:block;font-size:17px}
+.risk p{color:var(--paper-muted);font-size:15px}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+.faq details{border-radius:16px;background:#fff;border:1px solid var(--paper-line);transition:box-shadow .2s}
+.faq details[open]{box-shadow:0 18px 40px -28px rgba(11,27,44,.4)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;font-weight:800;font-size:17px;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{width:30px;height:30px;border-radius:50%;background:var(--paper);display:grid;place-items:center;flex:none;transition:transform .25s}
+.faq summary .pm svg{width:14px;height:14px}
+.faq details[open] .pm{transform:rotate(45deg);background:var(--paper-ink);color:#fff}
+.faq .ans{padding:0 24px 22px;color:var(--paper-muted);font-size:16px}
+.faq .ans a{color:#0a8db0;font-weight:700}
+
+/* CTA final */
+.final{padding:110px 0;overflow:hidden;isolation:isolate}
+.final::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(700px 400px at 50% 100%,rgba(255,61,85,.22),transparent 70%),radial-gradient(600px 400px at 50% 0%,rgba(42,212,240,.14),transparent 70%)}
+.final-box{text-align:center;max-width:760px;margin:0 auto}
+.final h2{font-size:clamp(34px,5vw,58px)}
+.final p{color:var(--muted);font-size:18.5px;margin:20px auto 36px;max-width:560px}
+
+/* Ecossistema */
+.eco{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.eco-card{padding:26px;border-radius:var(--radius);border:1px solid var(--line);background:var(--ink-2);text-decoration:none;display:flex;flex-direction:column;gap:8px;transition:border-color .2s}
+.eco-card:hover{border-color:var(--line-2)}
+.eco-card .lbl{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+.eco-card .lbl.paid{color:var(--cyan)}
+.eco-card h3{font-size:19px;letter-spacing:-.01em}
+.eco-card p{color:var(--muted);font-size:15px}
+.eco-card ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:14.5px}
+.eco-card .go{margin-top:auto;padding-top:10px;font-weight:800;font-size:14.5px;color:var(--cyan)}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:64px 0 120px;background:#040d17;color:var(--muted);font-size:15px}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
+.foot h4{color:var(--text);font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 16px}
+.foot ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--text)}
+.foot .about p{margin-top:16px;max-width:360px}
+.social{display:flex;gap:10px;margin-top:20px}
+.social a{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);display:grid;place-items:center;transition:all .2s}
+.social a:hover{border-color:var(--cyan);color:var(--cyan)}
+.social svg{width:19px;height:19px}
+.legal{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:space-between;font-size:13.5px;color:var(--dim)}
+
+/* CTA fixo mobile */
+.sticky-cta{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;align-items:center;gap:12px;padding:10px 10px 10px 18px;border-radius:20px;background:rgba(10,26,44,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line-2);box-shadow:0 20px 50px -10px rgba(0,0,0,.7);transform:translateY(140%);transition:transform .35s cubic-bezier(.2,.8,.2,1);padding-bottom:calc(10px + env(safe-area-inset-bottom,0px))}
+.sticky-cta.show{transform:none}
+.sticky-cta p{font-size:13px;line-height:1.3;color:var(--muted)}
+.sticky-cta p b{display:block;color:var(--text);font-size:15px}
+.sticky-cta .btn{margin-left:auto}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.no-js .rv{opacity:1;transform:none}
+
+/* ===================== RESPONSIVO ===================== */
+@media (max-width:1180px){
+  .chip-2{display:none}
+}
+@media (max-width:1080px){
+  .mini-grid{grid-template-columns:repeat(2,1fr)}
+  .nav{gap:20px}
+  .nav a[href="#faq"]{display:none}
+}
+@media (max-width:920px){
+  .chip-2{display:flex}
+  .nav,.link-login{display:none}
+  .menu-btn{display:grid}
+  .mobile-nav{position:fixed;inset:72px 0 auto;z-index:49;background:rgba(6,18,31,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:12px 20px 24px}
+  .mobile-nav.open{display:block}
+  .mobile-nav a{display:block;padding:14px 4px;border-bottom:1px solid var(--line);text-decoration:none;font-weight:700;font-size:17px}
+  .mobile-nav a.btn{display:flex;margin-top:18px;width:100%;padding:0 26px;border:0}
+  .hero{padding:112px 0 56px}
+  .hero-grid{grid-template-columns:1fr;gap:56px}
+  .hero-copy{text-align:center}
+  .hero-sub,.proof{margin-left:auto;margin-right:auto}
+  .hero-ctas,.checks{justify-content:center}
+  .proof{justify-content:center;text-align:left}
+  .compare,.feature,.demo-grid,.pricing{grid-template-columns:1fr}
+  .feature{gap:36px}
+  .feature.rev .f-media{order:0}
+  .steps{grid-template-columns:1fr}
+  .step:not(:last-child)::after{display:none}
+  .aud,.testis,.eco{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .foot{grid-template-columns:1fr 1fr}
+  .foot .about{grid-column:1/-1}
+  .sticky-cta{display:flex}
+  .pricing .plan-hi{order:-1}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .sec{padding:76px 0}
+  .sec-head{margin-bottom:40px}
+  .header-cta .btn{display:none}
+  .hero-ctas .btn,.final .btn,.center-cta .btn,.demo .btn{width:100%}
+  .btn-lg{padding:0 20px;font-size:16px}
+  .compare,.pricing,.feature,.demo-grid{grid-template-columns:minmax(0,1fr)}
+  .chip{display:none}
+  .phone{width:min(300px,88vw)}
+  .steps-list li{font-size:11.8px}
+  .cmp,.plan{padding:26px}
+  .mini-grid,.aud,.testis,.eco{grid-template-columns:1fr}
+  .stat{padding:26px 20px}
+  .lib{padding:18px;border-radius:20px}
+  .tools{grid-template-columns:1fr 1fr}
+  .tools li{font-size:13.5px;padding:10px 12px}
+  .cats{flex-wrap:nowrap;overflow-x:auto;margin:0 -18px;padding:0 18px 4px;scrollbar-width:none}
+  .cats::-webkit-scrollbar{display:none}
+  .cats button{flex:none}
+  .search{max-width:none}
+  .risk{flex-direction:column;text-align:center}
+  .foot{grid-template-columns:1fr}
+  .price .val{font-size:44px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+  .ecg-mini path,.ecg-band path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- Ícones reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="ecgGrad" x1="0" x2="1"><stop offset="0" stop-color="#2ad4f0" stop-opacity="0"/><stop offset=".5" stop-color="#2ad4f0"/><stop offset="1" stop-color="#ff3d55"/></linearGradient>
+  </defs>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M7 7l10 10M17 7L7 17"/></symbol>
+  <symbol id="i-checkc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".18"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M7.5 12.5l3 3 6-6.5"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M6 3h8l5 5v13H6z M14 3v5h5 M9 13h7M9 17h5"/></symbol>
+  <symbol id="i-sync" viewBox="0 0 24 24"><rect x="2" y="4" width="13" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="16" y="8" width="6" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 18h6M8.5 14v4"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8.5 7h7M9 12h.01M12 12h.01M15 12h.01M9 16h.01M12 16h.01M15 16h.01"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 11a8 8 0 0 0-14.6-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.6 4.5L20 16M20 20v-4h-4"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M2 12h4l2-5 4 10 2-5h8"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-steth" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6 3v6a4 4 0 0 0 8 0V3M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-amb" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M2 16V7h11v9M13 10h4l4 4v2h-8"/><circle cx="7" cy="17.5" r="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="17.5" r="2" fill="none" stroke="currentColor" stroke-width="2"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M7.5 9.5v4M5.5 11.5h4"/></symbol>
+  <symbol id="i-baby" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9 10h.01M15 10h.01M9.5 14.5a3.5 3.5 0 0 0 5 0"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 6v13M3 14h18v5M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="10.5" r="2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-syringe" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 2l4 4M20 4l-3 3M17 7l-9.5 9.5-3-3L14 4zM7.5 16.5L3 21M10 9l2 2M7 12l2 2"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M2 9l10-5 10 5-10 5z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 12v9h14v-9M12 8v13M12 8S10.5 3 8 4s0 4 4 4zm0 0s1.5-5 4-4 0 4-4 4z"/></symbol>
+</svg>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="topo">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="E-POC Emergência Point of Care — início">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><path d="M12 4h8v8h8v8h-8v8h-8v-8H4v-8h8z" fill="none" stroke="#2ad4f0" stroke-width="2" stroke-linejoin="round"/><path d="M5 16h6l2-4 3 8 2-4h9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-name">E-POC<small>Emergência Point of Care</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#recursos">Recursos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#ferramentas">Ferramentas</a>
+      <a href="#planos">Planos</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <div class="header-cta">
+      <a class="link-login" href="https://epoc-e.com/" data-cta="header_login">Entrar</a>
+      <a class="btn btn-primary btn-sm" href="https://epoc-e.com/" data-cta="header_trial">Testar 7 dias grátis</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+  <a href="#recursos">Recursos</a>
+  <a href="#como-funciona">Como funciona</a>
+  <a href="#ferramentas">Ferramentas</a>
+  <a href="#planos">Planos</a>
+  <a href="#faq">Dúvidas</a>
+  <a href="https://epoc-e.com/" data-cta="mobile_login">Entrar na minha conta</a>
+  <a class="btn btn-primary" href="https://epoc-e.com/" data-cta="mobile_menu_trial">Testar 7 dias grátis</a>
+</nav>
+
+<main id="conteudo">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span>Compatível com iOS, Android e computador</span>
+      <h1 id="hero-title">
+        <span class="kw">App de medicina de emergência</span>
+        Quando o tempo importa, a decisão tem que ser <em>rápida.</em>
+      </h1>
+      <p class="hero-sub">PCR guiada por voz, <strong>+90 calculadoras, escores e protocolos</strong> e o relatório pronto para o prontuário em segundos. Tudo em um só app, feito para quem decide sob pressão.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary btn-lg" href="https://epoc-e.com/" data-cta="hero_trial">Começar meus 7 dias grátis <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost btn-lg" href="#demo">Ver o app em ação</a>
+      </div>
+      <ul class="checks">
+        <li><svg><use href="#i-check"/></svg>7 dias grátis para testar</li>
+        <li><svg><use href="#i-check"/></svg>Celular e desktop sincronizados</li>
+        <li><svg><use href="#i-check"/></svg>Diretrizes sempre atualizadas</li>
+      </ul>
+      <div class="proof">
+        <div class="avatars" aria-hidden="true">
+          <span style="background:#e8344e">RA</span><span style="background:#0a8db0">MC</span><span style="background:#7c4dff">FT</span><span style="background:#2f9e44">+</span>
+        </div>
+        <p><strong>+3 mil atendimentos</strong> apoiados pelo E-POC<br>em salas de emergência de todo o Brasil.</p>
+      </div>
+    </div>
+
+    <div class="device-stage" aria-label="Prévia da PCR guiada por voz no app E-POC" role="img">
+      <div class="phone" aria-hidden="true">
+        <div class="screen">
+          <div class="notch"></div>
+          <div class="scr-top">
+            <span class="scr-tag"><i></i>PCR EM CURSO</span>
+            <span class="scr-mode">Adulto · Ciclo 3</span>
+          </div>
+          <div class="timer-card">
+            <div class="timer-lbl">Tempo de PCR</div>
+            <div class="timer" id="pcrTimer">06:12</div>
+            <div class="rhythm">Ritmo chocável · FV/TV sem pulso</div>
+            <svg class="ecg-mini" viewBox="0 0 300 40" preserveAspectRatio="none"><path d="M0 20 L30 20 L36 10 L42 30 L48 6 L54 34 L60 14 L66 26 L72 8 L78 32 L84 12 L90 28 L96 10 L102 30 L108 16 L114 24 L120 8 L126 32 L132 14 L138 26 L144 10 L150 30 L156 12 L162 28 L168 8 L174 32 L180 16 L186 24 L192 10 L198 30 L204 14 L210 26 L216 8 L222 32 L228 12 L234 28 L240 10 L246 30 L252 16 L258 24 L264 10 L270 30 L276 20 L300 20"/></svg>
+          </div>
+          <div class="next">
+            <div><b>Próxima checagem de ritmo</b><small>RCP de alta qualidade · 100–120/min</small></div>
+            <span class="cd" id="cycleTimer">01:48</span>
+          </div>
+          <ul class="steps-list">
+            <li><span class="ok"><svg><use href="#i-check"/></svg></span>Choque 200 J bifásico<small>05:58</small></li>
+            <li><span class="ok"><svg><use href="#i-check"/></svg></span>Adrenalina 1 mg IV<small>04:01</small></li>
+            <li class="now"><span class="ok"></span>Amiodarona 300 mg IV<small>agora</small></li>
+          </ul>
+          <div class="voice">
+            <span class="mic"><svg><use href="#i-mic"/></svg></span>
+            “Amiodarona feita”
+            <span class="wave"><i></i><i></i><i></i><i></i><i></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="chip chip-1" aria-hidden="true"><span class="ic" style="background:rgba(42,212,240,.15);color:var(--cyan)"><svg><use href="#i-cam"/></svg></span><span>Gasometria por foto<small>interpretada em segundos</small></span></div>
+      <div class="chip chip-2" aria-hidden="true"><span class="ic" style="background:rgba(59,227,155,.15);color:var(--green)"><svg><use href="#i-doc"/></svg></span><span>Relatório no prontuário<small>do celular ao desktop em 1 s</small></span></div>
+      <div class="chip chip-3" aria-hidden="true"><span class="ic" style="background:rgba(255,194,75,.15);color:var(--amber)"><svg><use href="#i-calc"/></svg></span><span>Dose → mL/h na bomba<small>informe o peso e pronto</small></span></div>
+    </div>
+  </div>
+  <svg class="ecg-band" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 H260 l12 -8 l10 8 h30 l8 14 l14 -70 l14 86 l10 -30 h40 l14 -10 l14 10 H640 l12 -8 l10 8 h30 l8 14 l14 -70 l14 86 l10 -30 h40 l14 -10 l14 10 H1040 l12 -8 l10 8 h30 l8 14 l14 -70 l14 86 l10 -30 h40 l14 -10 l14 10 H1440"/></svg>
+</section>
+
+<!-- ===================== TICKER ===================== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>PCR Guiada</span><span>Protocolo SEPSE</span><span>Protocolo AVC</span><span>IAM com Supra ST</span><span>HEART Score</span><span>SRI · Intubação</span><span>Drogas Vasoativas</span><span>NIHSS</span><span>Gasometria</span><span>Cetoacidose Diabética</span><span>Anafilaxia</span><span>Glasgow</span><span>Ventilação Mecânica</span><span>POCUS</span><span>Manual do ECG</span><span>Sedoanalgesia</span><span>Trombólise</span><span>ATLS</span><span>Emergência Ped. + PCR</span><span>Antídotos</span>
+    <span>PCR Guiada</span><span>Protocolo SEPSE</span><span>Protocolo AVC</span><span>IAM com Supra ST</span><span>HEART Score</span><span>SRI · Intubação</span><span>Drogas Vasoativas</span><span>NIHSS</span><span>Gasometria</span><span>Cetoacidose Diabética</span><span>Anafilaxia</span><span>Glasgow</span><span>Ventilação Mecânica</span><span>POCUS</span><span>Manual do ECG</span><span>Sedoanalgesia</span><span>Trombólise</span><span>ATLS</span><span>Emergência Ped. + PCR</span><span>Antídotos</span>
+  </div>
+</div>
+
+<!-- ===================== PROBLEMA x SOLUÇÃO ===================== -->
+<section class="sec" aria-labelledby="dor-title">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">O plantão não espera</span>
+      <h2 id="dor-title">Cada minuto procurando a dose é um minuto a menos com o paciente.</h2>
+      <p>PDFs, abas abertas, grupos de WhatsApp e conta de cabeça. O E-POC reúne tudo o que você consulta na emergência em um lugar, organizado para a beira do leito.</p>
+    </div>
+    <div class="compare">
+      <div class="cmp cmp-bad rv">
+        <h3>Plantão sem o E-POC <span class="tag">hoje</span></h3>
+        <ul>
+          <li><span class="i"><svg><use href="#i-x"/></svg></span>Busca espalhada entre PDFs, sites, livros e grupos</li>
+          <li><span class="i"><svg><use href="#i-x"/></svg></span>Diluição e vazão da bomba calculadas na mão</li>
+          <li><span class="i"><svg><use href="#i-x"/></svg></span>Cronômetro e doses da PCR controlados de cabeça</li>
+          <li><span class="i"><svg><use href="#i-x"/></svg></span>Relatório digitado no fim do plantão, de memória</li>
+          <li><span class="i"><svg><use href="#i-x"/></svg></span>Dúvida se a conduta segue a diretriz mais recente</li>
+        </ul>
+      </div>
+      <div class="cmp cmp-good rv">
+        <h3>Plantão com o E-POC <span class="tag">agora</span></h3>
+        <ul>
+          <li><span class="i"><svg><use href="#i-check"/></svg></span><span><b>+90 ferramentas</b> em um app, com busca rápida</span></li>
+          <li><span class="i"><svg><use href="#i-check"/></svg></span><span>Informe o peso: <b>dose, diluição e mL/h</b> prontos</span></li>
+          <li><span class="i"><svg><use href="#i-check"/></svg></span><span><b>PCR guiada por voz</b> com cronômetro, doses e checklist</span></li>
+          <li><span class="i"><svg><use href="#i-check"/></svg></span><span><b>Relatório técnico</b> no desktop em 1 segundo</span></li>
+          <li><span class="i"><svg><use href="#i-check"/></svg></span><span><b>Atualização automática</b> de diretrizes e consensos</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RECURSOS ===================== -->
+<section class="sec" id="recursos" aria-labelledby="rec-title" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">Recursos</span>
+      <h2 id="rec-title">Tudo o que você precisa na sala de emergência</h2>
+      <p>Como diagnosticar, como tratar, como diluir, como administrar. Tudo passo a passo, para consulta rápida durante o plantão.</p>
+    </div>
+
+    <!-- 1. PCR -->
+    <article class="feature rv">
+      <div class="f-media pcr-visual" aria-hidden="true">
+        <div class="pcr-grid">
+          <div class="pcr-cell red"><small>Tempo de PCR</small><b>06:12</b></div>
+          <div class="pcr-cell cy"><small>Próximo ciclo</small><b>01:48</b></div>
+          <div class="pcr-cell am"><small>Adrenalina</small><b>×2</b></div>
+          <div class="pcr-cell gr"><small>Choques</small><b>3</b></div>
+        </div>
+        <div class="pcr-modes"><span class="on">Adulto</span><span>Pediatria</span><span>Gestante</span><span>Afogamento</span></div>
+        <div class="voice-big"><span class="mic"><svg><use href="#i-mic"/></svg></span>“Ritmo chocável, choque aplicado”<span class="wave"><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+      <div>
+        <span class="f-num">01 · PCR INTERATIVA</span>
+        <h3>PCR guiada por voz, com as mãos livres para o paciente</h3>
+        <p class="lead">Suporte à parada cardiorrespiratória em tempo real, por comando de voz. Você fala, o E-POC cronometra, lembra as doses e registra cada etapa.</p>
+        <ul class="bul">
+          <li><svg><use href="#i-checkc"/></svg>Cronometragem, doses e checklist automáticos</li>
+          <li><svg><use href="#i-checkc"/></svg>Adulto, pediatria, gestantes e vítimas de afogamento</li>
+          <li><svg><use href="#i-checkc"/></svg>Registro completo para o relatório final</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 2. Gasometria -->
+    <article class="feature rev rv">
+      <div class="f-media">
+        <img src="img/gasometria-por-foto.webp" width="640" height="648" loading="lazy" decoding="async" alt="Tela do E-POC interpretando uma gasometria arterial a partir de uma foto, com diagnóstico de acidose respiratória aguda e conduta sugerida">
+      </div>
+      <div>
+        <span class="f-num">02 · GASOMETRIA POR FOTO</span>
+        <h3>Fotografou. Analisou. Decidiu.</h3>
+        <p class="lead">Tire uma foto da gasometria e receba a interpretação do distúrbio ácido-base na hora, com laudo completo e sugestão de conduta.</p>
+        <ul class="bul">
+          <li><svg><use href="#i-checkc"/></svg>Interpretação do distúrbio ácido-base em segundos</li>
+          <li><svg><use href="#i-checkc"/></svg>Laudo completo pronto para registrar</li>
+          <li><svg><use href="#i-checkc"/></svg>Sugestão de conduta clínica</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 3. Aux. Diagnóstico -->
+    <article class="feature rv">
+      <div class="f-media">
+        <img src="img/auxiliar-diagnostico.webp" width="640" height="700" loading="lazy" decoding="async" alt="Tela do auxiliar de diagnóstico do E-POC com campo para sintomas e exames laboratoriais e botão Analisar">
+      </div>
+      <div>
+        <span class="f-num">03 · AUXILIAR DE DIAGNÓSTICO</span>
+        <h3>Fale os achados. Receba as hipóteses diagnósticas.</h3>
+        <p class="lead">Fale ou digite sinais, sintomas e alterações laboratoriais ou de imagem. O E-POC organiza a interpretação e sugere as hipóteses diagnósticas.</p>
+        <ul class="bul">
+          <li><svg><use href="#i-checkc"/></svg>Hemograma, coagulograma, função renal e mais</li>
+          <li><svg><use href="#i-checkc"/></svg>Entrada por voz ou texto</li>
+          <li><svg><use href="#i-checkc"/></svg>Hipóteses e conduta sugerida</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- 4. Pediatria -->
+    <article class="feature rev rv">
+      <div class="f-media tall">
+        <img src="img/emergencias-pediatricas.webp" width="640" height="960" loading="lazy" decoding="async" alt="Módulo de emergências pediátricas do E-POC com PCR, triagem, intubação, drogas de IOT, sedação e ventilação">
+      </div>
+      <div>
+        <span class="f-num">04 · EMERGÊNCIAS PEDIÁTRICAS</span>
+        <h3>Protocolos e doses organizados por idade e peso</h3>
+        <p class="lead">Diagnóstico, condutas, intubação, drogas, sedação e ventilação para o atendimento pediátrico de emergência, na palma da mão.</p>
+        <div class="pill-row"><span>PCR pediátrica</span><span>Drogas de IOT</span><span>Asma</span><span>Convulsão</span><span>Sepse</span><span>CAD</span><span>Anafilaxia</span><span>Trauma</span></div>
+      </div>
+    </article>
+
+    <!-- Recursos menores -->
+    <div class="mini-grid">
+      <div class="mini rv">
+        <div class="ico"><svg><use href="#i-calc"/></svg></div>
+        <h3>Calculadoras e bomba de infusão</h3>
+        <p>Calculadoras adulto e pediátrica com conversão automática para mL/h.</p>
+        <div class="calc-demo" aria-label="Exemplo: noradrenalina 64 microgramas por mL, 0,1 micrograma por quilo por minuto, paciente de 70 quilos, vazão de 6,6 mL por hora">Noradrenalina 64 mcg/mL<br>0,1 mcg/kg/min · 70 kg<br>→ <b>6,6 mL/h</b></div>
+      </div>
+      <div class="mini rv">
+        <div class="ico"><svg><use href="#i-doc"/></svg></div>
+        <h3>Relatório final otimizado</h3>
+        <p>O app troca a linguagem coloquial por termos técnicos e corrige a lógica das informações.</p>
+      </div>
+      <div class="mini rv">
+        <div class="ico"><svg><use href="#i-sync"/></svg></div>
+        <h3>Celular + desktop em tempo real</h3>
+        <p>O que você faz no celular aparece no computador na hora. É só copiar e colar no prontuário.</p>
+      </div>
+      <div class="mini rv">
+        <div class="ico"><svg><use href="#i-refresh"/></svg></div>
+        <h3>Atualizações automáticas</h3>
+        <p>Novas diretrizes e consensos entram no app, e você é avisado de cada atualização.</p>
+      </div>
+    </div>
+
+    <div class="center-cta rv">
+      <a class="btn btn-primary btn-lg" href="https://epoc-e.com/" data-cta="features_trial">Quero testar no meu próximo plantão <svg><use href="#i-arrow"/></svg></a>
+      <p>7 dias grátis · Funciona no celular e no computador</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEMO ===================== -->
+<section class="sec demo" id="demo" aria-labelledby="demo-title">
+  <div class="wrap demo-grid">
+    <div class="video-frame rv">
+      <!-- Vídeo carregado só no clique (performance). Troque o src se tiver um vídeo de demonstração melhor. -->
+      <img id="videoPoster" src="img/medico-usando-epoc.webp" width="640" height="1115" loading="lazy" decoding="async" alt="Médico segurando o celular com o app E-POC aberto">
+      <button class="play" id="playBtn" type="button" data-video="https://media.base44.com/videos/public/6ac7e3895d27c9c700876f9f/f62b6aed3_VID-20260807-WA0063.mp4" aria-label="Assistir vídeo de demonstração do E-POC">
+        <span><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 4.5v15l13-7.5z"/></svg></span>
+        <em>Assistir demonstração</em>
+      </button>
+    </div>
+    <div>
+      <div class="sec-head left rv" style="margin-bottom:34px">
+        <span class="kicker">Veja em ação</span>
+        <h2 id="demo-title">Mãos no paciente. O resto, o E-POC faz.</h2>
+        <p>Veja o E-POC funcionando em diferentes cenários da emergência: da PCR à prescrição, com o relatório chegando ao computador antes de você tirar as luvas.</p>
+      </div>
+      <ul class="bul rv" style="margin-top:0">
+        <li><svg><use href="#i-checkc"/></svg>Comandos de voz durante o atendimento</li>
+        <li><svg><use href="#i-checkc"/></svg>Protocolos de Sepse, AVC e Dor Torácica passo a passo</li>
+        <li><svg><use href="#i-checkc"/></svg>Relatório técnico copiado direto para o prontuário</li>
+      </ul>
+      <div class="rv" style="margin-top:34px">
+        <a class="btn btn-primary btn-lg" href="https://epoc-e.com/" data-cta="demo_trial">Testar 7 dias grátis <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMO FUNCIONA ===================== -->
+<section class="sec paper" id="como-funciona" aria-labelledby="cf-title">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">Como funciona</span>
+      <h2 id="cf-title">Do caos à decisão, em três passos</h2>
+      <p>Pensado para o ritmo da emergência: mãos livres no paciente, cabeça livre para decidir.</p>
+    </div>
+    <ol class="steps" style="list-style:none;padding:0;margin:0">
+      <li class="step rv">
+        <span class="n">01</span>
+        <h3>Fale com o app</h3>
+        <p>Acione o atendimento por voz. O E-POC guia a PCR, abre protocolos e registra sinais e sintomas enquanto você atua.</p>
+        <span class="t">Comando de voz</span>
+      </li>
+      <li class="step rv">
+        <span class="n">02</span>
+        <h3>Siga o checklist guiado</h3>
+        <p>Calculadoras, escores e condutas preenchidos passo a passo, com conversões e doses prontas. Sem parar para calcular.</p>
+        <span class="t">Doses e escores prontos</span>
+      </li>
+      <li class="step rv">
+        <span class="n">03</span>
+        <h3>Cole no prontuário</h3>
+        <p>Um relatório técnico enriquecido é gerado e transferido para o desktop em 1 segundo. Copiar, colar, pronto.</p>
+        <span class="t">Celular → desktop em 1 s</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== BIBLIOTECA (SEO) ===================== -->
+<section class="sec paper" id="ferramentas" aria-labelledby="lib-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">Biblioteca completa</span>
+      <h2 id="lib-title"><span id="toolCountH">+90</span> ferramentas de emergência em um só app</h2>
+      <p>Protocolos, escores clínicos, calculadoras, drogas e toxicologia. Procure a que você mais usa no plantão.</p>
+    </div>
+    <div class="lib rv">
+      <div class="lib-tools">
+        <label class="search">
+          <span class="sr-only">Buscar ferramenta</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M20 20l-3.5-3.5"/></svg>
+          <input type="search" id="toolSearch" placeholder="Ex.: sepse, Glasgow, intubação…" autocomplete="off">
+        </label>
+        <div class="cats" role="group" aria-label="Filtrar por categoria">
+          <button type="button" data-f="all" aria-pressed="true">Todas</button>
+          <button type="button" data-f="pcr" aria-pressed="false">PCR</button>
+          <button type="button" data-f="prot" aria-pressed="false">Protocolos</button>
+          <button type="button" data-f="esc" aria-pressed="false">Escores e cálculos</button>
+          <button type="button" data-f="drog" aria-pressed="false">Drogas</button>
+          <button type="button" data-f="uti" aria-pressed="false">UTI e procedimentos</button>
+          <button type="button" data-f="dx" aria-pressed="false">Diagnóstico</button>
+          <button type="button" data-f="tox" aria-pressed="false">Toxicologia</button>
+        </div>
+      </div>
+      <ul class="tools" id="tools">
+        <!-- PCR e reanimação -->
+        <li data-cat="pcr">PCR Guiada</li>
+        <li data-cat="pcr">Emergência Pediátrica + PCR</li>
+        <li data-cat="pcr">Afogamento + PCR</li>
+        <li data-cat="pcr">Cesárea Perimortem</li>
+        <li data-cat="pcr">CVE Sincronizada</li>
+        <li data-cat="pcr">XABCDE</li>
+        <li data-cat="pcr">XABCDE Rápido</li>
+        <li data-cat="pcr">Arritmias</li>
+        <!-- Protocolos -->
+        <li data-cat="prot">Protocolo Sepse</li>
+        <li data-cat="prot">Protocolo Dor Torácica</li>
+        <li data-cat="prot">Protocolo AVC</li>
+        <li data-cat="prot">IAM com Supra ST</li>
+        <li data-cat="prot">IAM sem Supra ST</li>
+        <li data-cat="prot">Choque</li>
+        <li data-cat="prot">IC Descompensada</li>
+        <li data-cat="prot">Cetoacidose Diabética</li>
+        <li data-cat="prot">Anafilaxia</li>
+        <li data-cat="prot">Dissecção de Aorta</li>
+        <li data-cat="prot">TVP / TEP</li>
+        <li data-cat="prot">HAS no PS</li>
+        <li data-cat="prot">Crise Convulsiva</li>
+        <li data-cat="prot">AIT</li>
+        <li data-cat="prot">Bell ou AVC?</li>
+        <li data-cat="prot">Cefaleias</li>
+        <li data-cat="prot">Hemorragia Digestiva</li>
+        <li data-cat="prot">Abdome Agudo</li>
+        <li data-cat="prot">Queimados</li>
+        <li data-cat="prot">ATLS</li>
+        <li data-cat="prot">PHTLS</li>
+        <li data-cat="prot">Choque Elétrico e Raio</li>
+        <li data-cat="prot">Rabdomiólise</li>
+        <li data-cat="prot">Crise Falcêmica</li>
+        <li data-cat="prot">Ascite</li>
+        <li data-cat="prot">Epistaxe</li>
+        <li data-cat="prot">Broncoespasmo</li>
+        <li data-cat="prot">SDRA</li>
+        <li data-cat="prot">Gestante</li>
+        <li data-cat="prot">Puérpera</li>
+        <li data-cat="prot">Emergências Psiquiátricas</li>
+        <li data-cat="prot">Libação Alcoólica</li>
+        <li data-cat="prot">Distúrbios Hidroeletrolíticos</li>
+        <li data-cat="prot">Paliativo</li>
+        <!-- Escores e calculadoras -->
+        <li data-cat="esc">HEART Score</li>
+        <li data-cat="esc">NIHSS</li>
+        <li data-cat="esc">Glasgow</li>
+        <li data-cat="esc">SOFA Score</li>
+        <li data-cat="esc">NEWS Score</li>
+        <li data-cat="esc">PSI Score</li>
+        <li data-cat="esc">CURB-65</li>
+        <li data-cat="esc">Shock Index</li>
+        <li data-cat="esc">HAS-BLED</li>
+        <li data-cat="esc">CHA₂DS₂-VA</li>
+        <li data-cat="esc">Wells TVP/TEP</li>
+        <li data-cat="esc">Escala RASS</li>
+        <li data-cat="esc">HINTS</li>
+        <li data-cat="esc">Androgué Hiponatremia</li>
+        <li data-cat="esc">Função Renal</li>
+        <li data-cat="esc">Hidratação</li>
+        <li data-cat="esc">Infusão Contínua</li>
+        <li data-cat="esc">Diluição Personalizada</li>
+        <li data-cat="esc">Conversão de Corticoides</li>
+        <li data-cat="esc">Prescrição Pediátrica</li>
+        <!-- Drogas e terapêutica -->
+        <li data-cat="drog">Drogas Vasoativas</li>
+        <li data-cat="drog">SRI · Intubação</li>
+        <li data-cat="drog">Sedoanalgesia</li>
+        <li data-cat="drog">Trombólise</li>
+        <li data-cat="drog">Medicamentos</li>
+        <li data-cat="drog">Interações Medicamentosas</li>
+        <li data-cat="drog">Antibióticos por Foco</li>
+        <li data-cat="drog">ATB / IRC</li>
+        <li data-cat="drog">Farmacologia da Emergência</li>
+        <li data-cat="drog">Pulsoterapia</li>
+        <li data-cat="drog">Hemotransfusão</li>
+        <li data-cat="drog">Hipodermóclise</li>
+        <li data-cat="drog">Dor</li>
+        <!-- UTI e procedimentos -->
+        <li data-cat="uti">UTI</li>
+        <li data-cat="uti">Ventilação Mecânica</li>
+        <li data-cat="uti">VNI</li>
+        <li data-cat="uti">Cricotireoidostomia</li>
+        <li data-cat="uti">Drenagem de Tórax</li>
+        <li data-cat="uti">POCUS</li>
+        <li data-cat="uti">Safety Huddle</li>
+        <li data-cat="uti">Consulta Pré-Anestésica</li>
+        <!-- Diagnóstico e IA -->
+        <li data-cat="dx">Consulta Emergência</li>
+        <li data-cat="dx">Consulta Padrão</li>
+        <li data-cat="dx">ScannerNote</li>
+        <li data-cat="dx">Auxiliar de Diagnóstico</li>
+        <li data-cat="dx">Gasometria</li>
+        <li data-cat="dx">Hemograma</li>
+        <li data-cat="dx">Exame Neurológico</li>
+        <li data-cat="dx">Manual do ECG</li>
+        <li data-cat="dx">Radiologia</li>
+        <li data-cat="dx">Busca Rápida</li>
+        <li data-cat="dx">Help-me!</li>
+        <li data-cat="dx">Glossário Médico</li>
+        <!-- Toxicologia -->
+        <li data-cat="tox">CIATOX</li>
+        <li data-cat="tox">Antídotos</li>
+        <li data-cat="tox">Acidente Ofídico</li>
+        <li data-cat="tox">Lavagem Gástrica</li>
+      </ul>
+      <div class="more-wrap" id="moreWrap"><button type="button" class="more-btn" id="moreBtn">Ver todas as <span id="toolCountB">99</span> ferramentas</button></div>
+      <p class="empty" id="toolsEmpty">Não encontrou? A biblioteca cresce a cada atualização e você tem acesso a tudo no teste grátis.</p>
+      <div class="lib-foot">
+        <span><strong id="toolCount">0</strong> ferramentas encontradas · novas a cada atualização</span>
+        <a class="btn btn-primary btn-sm" href="https://epoc-e.com/" data-cta="library_trial">Acessar todas grátis por 7 dias <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARA QUEM ===================== -->
+<section class="sec" id="publico" aria-labelledby="pub-title">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">Para quem é</span>
+      <h2 id="pub-title">Feito para quem atua na linha de frente</h2>
+      <p>Do pré-hospitalar à UTI, o E-POC acompanha quem decide sob pressão.</p>
+    </div>
+    <div class="aud">
+      <div class="aud-card rv"><span class="ico"><svg><use href="#i-pulse"/></svg></span><div><h3>Médicos emergencistas</h3><p>Pronto-socorro, UPA e sala vermelha.</p></div></div>
+      <div class="aud-card rv"><span class="ico"><svg><use href="#i-amb"/></svg></span><div><h3>Médicos do SAMU e APH</h3><p>Decisão rápida no pré-hospitalar.</p></div></div>
+      <div class="aud-card rv"><span class="ico"><svg><use href="#i-bed"/></svg></span><div><h3>Intensivistas</h3><p>Drogas vasoativas, ventilação e escores de UTI.</p></div></div>
+      <div class="aud-card rv"><span class="ico"><svg><use href="#i-baby"/></svg></span><div><h3>Pediatras</h3><p>Doses e protocolos por idade e peso.</p></div></div>
+      <div class="aud-card rv"><span class="ico"><svg><use href="#i-syringe"/></svg></span><div><h3>Anestesistas</h3><p>SRI, sedoanalgesia e avaliação pré-anestésica.</p></div></div>
+      <div class="aud-card rv"><span class="ico"><svg><use href="#i-cap"/></svg></span><div><h3>Estudantes e residentes</h3><p>Internato e residência com segurança no plantão.</p></div></div>
+    </div>
+    <p class="notice rv"><span><svg width="16" height="16" style="vertical-align:-3px;margin-right:6px"><use href="#i-lock"/></svg>Uso restrito a médicos e estudantes de medicina.</span><span>É da enfermagem? <a href="https://top-nurse-flow.base44.app/" data-cta="topnurse_notice" rel="noopener">Conheça o Top Nurse →</a></span></p>
+  </div>
+</section>
+
+<!-- ===================== NÚMEROS + DEPOIMENTOS ===================== -->
+<section class="sec" aria-labelledby="dep-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="stats rv">
+      <div class="stat"><b><span>+</span>3 mil</b><p>atendimentos apoiados</p></div>
+      <div class="stat"><b><span>+</span>90</b><p>ferramentas de emergência</p></div>
+      <div class="stat"><b>24<span>h</span></b><p>atualização automática de diretrizes</p></div>
+      <div class="stat"><b>1<span>s</span></b><p>do celular para o prontuário</p></div>
+    </div>
+
+    <div class="sec-head rv" style="margin-top:100px;margin-bottom:0">
+      <span class="kicker">Depoimentos</span>
+      <h2 id="dep-title">Médicos que já levam o E-POC para o plantão</h2>
+    </div>
+    <div class="testis">
+      <figure class="testi rv" style="margin:0">
+        <div class="stars" aria-label="5 de 5 estrelas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <blockquote>“O E-POC virou parte do meu plantão. A PCR guiada por voz mantém o cronômetro e as doses na mão, e o relatório sai pronto para o prontuário.”</blockquote>
+        <figcaption class="who"><span class="av" style="background:#e8344e">RA</span><span><b>Dr. Ricardo Almeida</b><small>Médico emergencista · São Paulo, SP</small></span></figcaption>
+      </figure>
+      <figure class="testi rv" style="margin:0">
+        <div class="stars" aria-label="5 de 5 estrelas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <blockquote>“As calculadoras e os escores salvam tempo real. Chego na beira do leito, falo os dados e tenho a conduta baseada em diretriz na hora.”</blockquote>
+        <figcaption class="who"><span class="av" style="background:#0a8db0">MC</span><span><b>Dra. Marina Costa</b><small>Residente de Clínica Médica · Recife, PE</small></span></figcaption>
+      </figure>
+      <figure class="testi rv" style="margin:0">
+        <div class="stars" aria-label="5 de 5 estrelas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <blockquote>“Padronizamos condutas com os protocolos do app. A atualização automática garante que a equipe esteja sempre na diretriz mais recente.”</blockquote>
+        <figcaption class="who"><span class="av" style="background:#7c4dff">FT</span><span><b>Dr. Felipe Tavares</b><small>Coordenador de Pronto-Socorro · Curitiba, PR</small></span></figcaption>
+      </figure>
+    </div>
+    <div class="trust rv">
+      <span><svg><use href="#i-shield"/></svg>Baseado em diretrizes vigentes</span>
+      <span><svg><use href="#i-lock"/></svg>Dados em conformidade com a LGPD</span>
+      <span><svg><use href="#i-steth"/></svg>Uso restrito a médicos e estudantes</span>
+      <span><svg><use href="#i-sync"/></svg>Sincronização em tempo real</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PLANOS ===================== -->
+<section class="sec paper" id="planos" aria-labelledby="planos-title">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">Planos</span>
+      <h2 id="planos-title">Teste 7 dias grátis. Depois, escolha seu plano.</h2>
+      <p>Todos os recursos em todos os planos. Cupom promocional aplicado no checkout.</p>
+    </div>
+    <div class="pricing">
+      <div class="plan rv">
+        <h3>Acesso 30 dias</h3>
+        <p class="desc">Ideal para um mês de plantão.</p>
+        <div class="price"><span class="cur">R$</span><span class="val">39,90</span><span class="per">/30 dias</span></div>
+        <p class="price-note">Acesso completo por 30 dias</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>PCR interativa guiada por voz</li>
+          <li><svg><use href="#i-check"/></svg>Calculadoras e escores clínicos</li>
+          <li><svg><use href="#i-check"/></svg>Protocolos de Sepse, AVC e Dor Torácica</li>
+          <li><svg><use href="#i-check"/></svg>Gasometria por foto e auxiliar de diagnóstico</li>
+          <li><svg><use href="#i-check"/></svg>Relatório técnico + versão web para desktop</li>
+        </ul>
+        <a class="btn btn-ghost btn-block" style="background:var(--paper);color:var(--paper-ink);border-color:var(--paper-line)" href="https://epoc-e.com/" data-cta="plan_monthly">Começar teste grátis</a>
+      </div>
+      <div class="plan plan-hi rv">
+        <span class="badge">Mais escolhido</span>
+        <h3>Plano anual <span class="save">Economize 33%</span></h3>
+        <p class="desc">Melhor custo para quem dá plantão o ano todo.</p>
+        <div class="price"><span class="cur">12x R$</span><span class="val">26,58</span></div>
+        <p class="price-note">ou R$ 319,00 à vista · <span class="strike">R$ 478,80</span> no mensal</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Tudo do acesso 30 dias</li>
+          <li><svg><use href="#i-check"/></svg>12 meses de plantão cobertos</li>
+          <li><svg><use href="#i-check"/></svg>Todas as atualizações de diretrizes do ano</li>
+          <li><svg><use href="#i-check"/></svg>Acesso às novas ferramentas lançadas</li>
+          <li><svg><use href="#i-check"/></svg>Celular + desktop sincronizados</li>
+        </ul>
+        <a class="btn btn-primary btn-block btn-lg" href="https://epoc-e.com/" data-cta="plan_annual">Começar meus 7 dias grátis <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="risk rv">
+      <span class="ico"><svg><use href="#i-gift"/></svg></span>
+      <div><b>Teste antes de decidir</b><p>Use o E-POC completo por 7 dias no seu plantão real. Se não fizer diferença, é só não assinar.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="sec paper" id="faq" aria-labelledby="faq-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">Dúvidas frequentes</span>
+      <h2 id="faq-title">Perguntas sobre o E-POC</h2>
+    </div>
+    <div class="faq">
+      <details class="rv" open>
+        <summary>Como funciona o teste grátis de 7 dias?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+        <div class="ans">Você cria sua conta e usa o E-POC completo por 7 dias, no celular e no computador. Depois do período de teste, escolhe o plano que cabe no seu ritmo de plantão: mensal ou anual.</div>
+      </details>
+      <details class="rv">
+        <summary>Quem pode usar o E-POC?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+        <div class="ans">O uso é restrito a médicos e estudantes de medicina. Para a enfermagem de urgência existe a plataforma <a href="https://top-nurse-flow.base44.app/" rel="noopener">Top Nurse</a>, do mesmo ecossistema.</div>
+      </details>
+      <details class="rv">
+        <summary>Funciona no iPhone, no Android e no computador?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+        <div class="ans">Sim. O app é compatível com iOS e Android e tem versão web para desktop. Celular e computador ficam sincronizados em tempo real.</div>
+      </details>
+      <details class="rv">
+        <summary>Como o relatório chega ao prontuário?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+        <div class="ans">Ao final do atendimento o E-POC gera um relatório técnico, com linguagem médica revisada, e envia automaticamente para a versão desktop. Basta copiar e colar no prontuário.</div>
+      </details>
+      <details class="rv">
+        <summary>O conteúdo do app é atualizado?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+        <div class="ans">Sim. As diretrizes são atualizadas automaticamente e o app avisa quando há conteúdo novo, como novos consensos e guidelines.</div>
+      </details>
+      <details class="rv">
+        <summary>O E-POC substitui o julgamento clínico?<span class="pm"><svg><use href="#i-plus"/></svg></span></summary>
+        <div class="ans">Não. O E-POC é uma ferramenta de apoio à decisão baseada em diretrizes vigentes. A conduta final é sempre do médico responsável pelo paciente.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="final" aria-labelledby="final-title">
+  <div class="wrap final-box rv">
+    <span class="kicker">Seu próximo plantão</span>
+    <h2 id="final-title">Chegue ao próximo plantão com a emergência inteira no bolso.</h2>
+    <p>PCR guiada por voz, +90 ferramentas e relatório pronto para o prontuário. Teste grátis por 7 dias.</p>
+    <a class="btn btn-primary btn-lg" href="https://epoc-e.com/" data-cta="final_trial">Começar meus 7 dias grátis <svg><use href="#i-arrow"/></svg></a>
+    <ul class="checks" style="justify-content:center;margin-top:22px">
+      <li><svg><use href="#i-check"/></svg>iOS, Android e desktop</li>
+      <li><svg><use href="#i-check"/></svg>Todos os recursos liberados no teste</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== ECOSSISTEMA ===================== -->
+<section class="sec" aria-labelledby="eco-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head left rv" style="margin-bottom:32px">
+      <span class="kicker">Ecossistema E-POC</span>
+      <h2 id="eco-title" style="font-size:clamp(24px,3vw,32px)">Mais conteúdo para a sua emergência</h2>
+    </div>
+    <div class="eco">
+      <a class="eco-card rv" href="https://epoc-e.com/" data-cta="eco_podcast">
+        <span class="lbl">Gratuito</span>
+        <h3>Podcast E-POC</h3>
+        <ul><li>Anafilaxia: reconhecer e tratar</li><li>Hipertensão intracraniana e herniação</li></ul>
+        <span class="go">Ouvir episódios →</span>
+      </a>
+      <a class="eco-card rv" href="https://top-nurse-flow.base44.app/" data-cta="eco_topnurse" rel="noopener">
+        <span class="lbl paid">Para enfermagem</span>
+        <h3>Top Nurse</h3>
+        <p>Plataforma para a enfermagem de urgência e emergência.</p>
+        <span class="go">Conhecer o Top Nurse →</span>
+      </a>
+      <a class="eco-card rv" href="https://epoc-e.com/" data-cta="eco_ebooks">
+        <span class="lbl paid">Loja E-POC</span>
+        <h3>E-books e resumos</h3>
+        <p>Resumos e livros digitais de medicina de emergência.</p>
+        <span class="go">Ver materiais →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="about">
+        <a class="brand" href="#topo" aria-label="Voltar ao topo">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M12 4h8v8h8v8h-8v8h-8v-8H4v-8h8z" fill="none" stroke="#2ad4f0" stroke-width="2" stroke-linejoin="round"/><path d="M5 16h6l2-4 3 8 2-4h9" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="brand-name" style="color:var(--text)">E-POC<small>Emergência Point of Care</small></span>
+        </a>
+        <p>Toda a medicina de emergência em um só app: PCR guiada por voz, calculadoras, escores, protocolos e relatórios prontos para o prontuário.</p>
+        <div class="social">
+          <a href="https://instagram.com/epocemergencia" aria-label="Instagram do E-POC" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://facebook.com/epocemergencia" aria-label="Facebook do E-POC" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.5h-3c-3.1 0-3.8 2.3-3.8 3.8v2.2H8V12h2.2v9.5H14V12h2.7l.4-3.5z"/></svg></a>
+          <a href="https://tiktok.com/@epocemergencia" aria-label="TikTok do E-POC" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.2v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.6a5.8 5.8 0 1 0 5 5.8V9.1a7.4 7.4 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#ferramentas">Ferramentas</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#faq">Dúvidas frequentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Acesso e contato</h4>
+        <ul>
+          <li><a href="https://epoc-e.com/" data-cta="footer_login">Entrar no app</a></li>
+          <li><a href="https://epoc-e.com/" data-cta="footer_trial">Criar conta grátis</a></li>
+          <li><a href="mailto:contato@emergenciapointofcare.com">contato@emergenciapointofcare.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="year">2026</span> E-POC Emergência Point of Care. Todos os direitos reservados.</span>
+      <span>O E-POC é uma ferramenta de apoio à decisão clínica e não substitui o julgamento médico.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CTA fixo no mobile -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <p><b>7 dias grátis</b>iOS, Android e desktop</p>
+  <a class="btn btn-primary btn-sm" href="https://epoc-e.com/" data-cta="sticky_trial" tabindex="-1">Testar agora <svg><use href="#i-arrow"/></svg></a>
+</div>
+
+<script>
+(function(){
+  document.body.classList.remove('no-js');
+  var $=function(s,c){return (c||document).querySelector(s)}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* --- Header ao rolar --- */
+  var header=$('.header');
+  function onScroll(){header.classList.toggle('scrolled',window.scrollY>10)}
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  /* --- Menu mobile --- */
+  var mb=$('#menuBtn'), mn=$('#mobileNav');
+  mb.addEventListener('click',function(){var o=mn.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')});
+  $$('#mobileNav a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');mb.setAttribute('aria-expanded','false')})});
+
+  /* --- Cronômetros do mockup de PCR --- */
+  var t=372, c=108, pt=$('#pcrTimer'), ct=$('#cycleTimer');
+  function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+  if(!reduce){setInterval(function(){t++;c=c<=0?120:c-1;pt.textContent=fmt(t);ct.textContent=fmt(c)},1000)}
+
+  /* --- Biblioteca: busca + filtro --- */
+  var items=$$('#tools li'), q=$('#toolSearch'), cnt=$('#toolCount'), empty=$('#toolsEmpty'), cat='all', expanded=false, LIMIT=window.innerWidth<640?16:30;
+  var more=$('#moreWrap');
+  var norm=function(s){return s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase()};
+  function filter(){
+    var term=norm(q.value.trim()), n=0, clip=!expanded&&cat==='all'&&!term;
+    items.forEach(function(li){var ok=(cat==='all'||li.dataset.cat===cat)&&(!term||norm(li.textContent).indexOf(term)>-1);if(ok)n++;li.hidden=!ok||(clip&&n>LIMIT)});
+    cnt.textContent=n; empty.style.display=n?'none':'block'; more.hidden=!clip;
+  }
+  $('#toolCountH').textContent=items.length; $('#toolCountB').textContent=items.length;
+  $('#moreBtn').addEventListener('click',function(){expanded=true;filter();track('library_expand')});
+  q.addEventListener('input',filter);
+  $$('.cats button').forEach(function(b){b.addEventListener('click',function(){
+    $$('.cats button').forEach(function(x){x.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true'); cat=b.dataset.f; filter();
+  })});
+  filter();
+
+  /* --- Vídeo sob demanda --- */
+  var pb=$('#playBtn');
+  pb.addEventListener('click',function(){
+    var v=document.createElement('video');
+    v.src=pb.dataset.video; v.controls=true; v.autoplay=true; v.playsInline=true; v.setAttribute('playsinline','');
+    var poster=$('#videoPoster'); poster.replaceWith(v); pb.remove();
+    track('video_play');
+  });
+
+  /* --- Reveal ao rolar --- */
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    $$('.rv').forEach(function(el,i){el.style.transitionDelay=(i%4)*60+'ms';io.observe(el)});
+  } else { $$('.rv').forEach(function(el){el.classList.add('in')}) }
+
+  /* --- CTA fixo no mobile: aparece depois do hero, some nos planos/rodapé --- */
+  var sticky=$('#stickyCta'), heroVisible=true, planVisible=false;
+  function upd(){var s=!heroVisible&&!planVisible;sticky.classList.toggle('show',s);sticky.setAttribute('aria-hidden',!s);sticky.querySelector('a').tabIndex=s?0:-1}
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){heroVisible=e[0].isIntersecting;upd()}).observe($('.hero'));
+    var po=new IntersectionObserver(function(es){planVisible=es.some(function(e){return e.isIntersecting});upd()});
+    po.observe($('#planos')); po.observe($('.final')); po.observe($('footer'));
+  }
+
+  /* --- Rastreamento: repassa UTMs para o app + evento de clique ---
+     Mantém utm_source/utm_medium/... e fbclid/gclid ao enviar o usuário para epoc-e.com,
+     para que a atribuição das campanhas (Instagram, Meta Ads, Google) não se perca. */
+  var keep=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid','ref'];
+  var params=new URLSearchParams(location.search), fwd=new URLSearchParams();
+  keep.forEach(function(k){if(params.get(k))fwd.set(k,params.get(k))});
+  $$('a[href^="https://epoc-e.com"],a[href^="https://top-nurse"]').forEach(function(a){
+    if(fwd.toString()){var u=new URL(a.href);fwd.forEach(function(v,k){if(!u.searchParams.has(k))u.searchParams.set(k,v)});a.href=u.toString()}
+  });
+  window.dataLayer=window.dataLayer||[];
+  function track(name,extra){
+    var ev=Object.assign({event:'cta_click',cta:name},extra||{});
+    window.dataLayer.push(ev);
+    if(typeof window.fbq==='function'){window.fbq('trackCustom','CTAClick',{cta:name})}
+    if(typeof window.gtag==='function'){window.gtag('event','cta_click',{cta:name})}
+  }
+  $$('[data-cta]').forEach(function(a){a.addEventListener('click',function(){track(a.dataset.cta)})});
+
+  $('#year').textContent=new Date().getFullYear();
+})();
+</script>
+<!--
+  PIXELS / ANALYTICS: cole aqui o Google Tag Manager e o Meta Pixel.
+  Os cliques em CTA já disparam o evento "cta_click" no dataLayer (com o nome do botão em "cta").
+-->
+</body>
+</html>
